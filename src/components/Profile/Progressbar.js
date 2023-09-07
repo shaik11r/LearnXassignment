@@ -1,10 +1,10 @@
 import React from "react";
 import { CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import RadialSeparators from "./RadialSeparators";
+import RadialSeparators from "../RadialSeparators";
 
 const Progressbarfun = () => (
-  <div style={{}}>
+  <div style={{ width: "200px" }}>
     <Progressbar>
       <CircularProgressbarWithChildren
         value={40}
@@ -31,14 +31,9 @@ const Progressbarfun = () => (
 
 function Progressbar(props) {
   return (
-    <div className="progressbar" >
-      <div  style={{ display: "flex", border: "1px solid black" }}>
-        <div style={{ width: "100%" }}>{props.children}</div>
-        <div style={{ width: "100%" }}>
-          <h3 className="h5">{props.label}</h3>
-          <p>{props.description}</p>
-        </div>
-      </div>
+    <div className="progressbar">
+      <div>Wheel of opportunity</div>
+      <div>{props.children}</div>
     </div>
   );
 }

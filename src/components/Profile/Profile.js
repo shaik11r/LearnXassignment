@@ -5,11 +5,12 @@ import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import Progressbarfun from "./Progressbar";
-import Picture from '../assets/ben-sweet-2LowviVHZ-E-unsplash.jpg'
+import Picture from "../assets/ben-sweet-2LowviVHZ-E-unsplash.jpg";
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 const IOSSwitch = styled((props) => <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />)(
   ({ theme }) => ({
-    width: 42,
-    height: 26,
+    width: 40,
+    height: 24,
     padding: 0,
     "& .MuiSwitch-switchBase": {
       padding: 0,
@@ -40,8 +41,8 @@ const IOSSwitch = styled((props) => <Switch focusVisibleClassName=".Mui-focusVis
     },
     "& .MuiSwitch-thumb": {
       boxSizing: "border-box",
-      width: 22,
-      height: 22,
+      width: 19,
+      height: 20,
     },
     "& .MuiSwitch-track": {
       borderRadius: 26 / 2,
@@ -68,15 +69,24 @@ function Profile() {
         </div>
       </div>
       <div className="profile__third">
-        <div>make my profile visible to employers</div>
+        <div>Make my profile visible to employers</div>
         <FormGroup>
-          <FormControlLabel control={<IOSSwitch sx={{ m: 2 }} defaultChecked />} />
+          <FormControlLabel control={<IOSSwitch sx={{ ml: 2 }} defaultChecked />} />
         </FormGroup>
+      </div>
+      <div className="profile_third--para">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry
       </div>
       <div className="profile_fourth"></div>
       <div className="profile_fifth-wheel"></div>
+      
+      <div className="onlineLinks" style={{color:'#68647e'}}>
+        <div>Online links</div>
+        <AddCircleIcon style={{ color:'#7c7cd3',marginRight:'16'}}/>
+      </div>
+      <div className="onlineLinks-para"> Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
       <div className="profile_sixth-ranking">
-        <Progressbarfun />
+        <Progressbarfun/>
       </div>
     </div>
   );
