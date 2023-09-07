@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 .main {
   position: relative;
+  box-sizing: border-box;
 }
+
 .navbar__first {
   padding: 1rem;
   width: 100%;
@@ -67,7 +71,7 @@ input:focus {
   align-items: center;
   justify-content: center;
   border-radius: 6px;
-  width: 90%;
+  width: calc(100% - 200px);
   height: 130px;
   overflow: hidden;
   object-fit: cover;
@@ -85,4 +89,68 @@ input:focus {
   align-items: center;
   width: 32px;
   height: 32px;
+}
+.main_first {
+  position: absolute;
+  top: 186px;
+  left: 200px;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid red;
+  width: calc(100% - 200px);
+}
+.profile__first {
+  font-family: "Roboto", sans-serif;
+  flex: 1;
+  max-width: 250px;
+  width: 90%;
+  border: 1px solid rgb(56, 22, 204);
+}
+.profile__second {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__second-name{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #403d50;
+}
+.profile__second-role{
+  margin:2px;
+  font-size: 0.8rem;
+  color: #dfe0e4;
+}
+.profile__second-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size:10px;
+}
+.profile__third {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.tabcomponent {
+  flex: 1;
+  border: 2px solid blueviolet;
+  padding: 20px;
+}
+.progressbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile_img {
+  position: absolute;
+  top: -50px;
+  left: 70px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 100%;
 }
