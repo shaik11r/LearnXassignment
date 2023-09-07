@@ -32,7 +32,9 @@ input:focus {
   outline: none;
 }
 .navbar__logo {
+  margin-left: 50px;
   font-size: 1.3rem;
+  font-weight: 700;
 }
 .sidebar__main {
   padding: 10px;
@@ -91,7 +93,7 @@ input:focus {
   height: 32px;
 }
 .main_first {
-  position: absolute;
+  position: fixed;
   top: 186px;
   left: 200px;
   display: flex;
@@ -103,7 +105,7 @@ input:focus {
   flex: 1;
   max-width: 270px;
   width: 99%;
-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .profile__second {
   margin-top: 70px;
@@ -137,12 +139,13 @@ box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .tabcomponent {
   flex: 1;
-  border: 2px solid blueviolet;
+  margin-right: 5px;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 20px;
 }
 .progressbar {
   width: 250px;
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,4 +194,63 @@ box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .profile_sixth-ranking {
   margin: 10px;
+}
+.tab__main {
+  padding: 10px;
+}
+.tab__first {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #9f9f9f;
+  margin-bottom: 30px;
+}
+.tab__second {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tab__second-edit {
+  display: flex;
+  justify-content: space-between;
+}
+.tab__second-experience {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.tab__second-company {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.tab__second-date {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.tab__second-description {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.tab__second-location {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #dfe0e4;
+}
+.line {
+  width: 100%;
+  color: green;
+  border-bottom: 2px solid #f0f0f0;
+}
+.links {
+  margin-top: 10px;
+  margin-left:30px;
+  width: 200px;
+  height: 70px;
+  background-color: #f6f9ff;
+}
+.onlineLinks-links{
+  margin-top: 10px;
+  margin-left:30px;
+  width: 200px;
+  height: 30px;
+  background-color: #f6f9ff;
 }

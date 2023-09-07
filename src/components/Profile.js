@@ -85,9 +85,12 @@ function Profile() {
         <AddCircleIcon style={{ color: "#7c7cd3", marginRight: "16" }} />
       </div>
       <div className="onlineLinks-para"> Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+      <div className="onlineLinks-links"></div>
+
       <div className="profile_sixth-ranking">
         <Progressbarfun />
       </div>
+      <div className="links"></div>
     </div>
   );
 }

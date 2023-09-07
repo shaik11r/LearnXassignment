@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import EditIcon from "@mui/icons-material/Edit";
+import backgroundDefault from '../assets/Capture.PNG';
 function ImageUploader() {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(backgroundDefault);
 
   const handleImageUpload = (event) => {
     const file = event.target.files[0];
