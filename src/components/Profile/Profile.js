@@ -6,7 +6,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import Progressbarfun from "./Progressbar";
 import Picture from "../assets/ben-sweet-2LowviVHZ-E-unsplash.jpg";
-import AddCircleIcon from '@mui/icons-material/AddCircle';
+import AddCircleIcon from "@mui/icons-material/AddCircle";
 const IOSSwitch = styled((props) => <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />)(
   ({ theme }) => ({
     width: 40,
@@ -79,14 +79,14 @@ function Profile() {
       </div>
       <div className="profile_fourth"></div>
       <div className="profile_fifth-wheel"></div>
-      
-      <div className="onlineLinks" style={{color:'#68647e'}}>
+
+      <div className="onlineLinks" style={{ color: "#68647e" }}>
         <div>Online links</div>
-        <AddCircleIcon style={{ color:'#7c7cd3',marginRight:'16'}}/>
+        <AddCircleIcon style={{ color: "#7c7cd3", marginRight: "16" }} />
       </div>
       <div className="onlineLinks-para"> Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
       <div className="profile_sixth-ranking">
-        <Progressbarfun/>
+        <Progressbarfun />
       </div>
     </div>
   );

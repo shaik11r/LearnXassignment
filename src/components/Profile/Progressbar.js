@@ -1,7 +1,7 @@
 import React from "react";
 import { CircularProgressbarWithChildren, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import RadialSeparators from "../RadialSeparators";
+import RadialSeparators from "./RadialSeparators";
 
 const Progressbarfun = () => (
   <div style={{ width: "200px" }}>
