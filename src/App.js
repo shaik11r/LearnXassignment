@@ -3,7 +3,7 @@ import Backgroundimage from "./components/Backgroundimage";
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
 import Sidebar from "./components/Sidebar";
-import TabsComponent from "./components/TabsComponent";
+import TabComponent from "./components/TabsComponent";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Backgroundimage />
       <div className="main_first">
         <Profile />
-        <TabsComponent/>
+        <TabComponent/>
       </div>
     </div>
   );
